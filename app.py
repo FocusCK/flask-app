@@ -18,7 +18,7 @@ def skills():
 def about():
     return render_template('about.html')
 
-@app.route('/contact', method=['GET', 'POST'])
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html')
 
