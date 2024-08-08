@@ -18,8 +18,10 @@ def skills():
 def about():
     return render_template('about.html')
 
-# @app.route('/contact', method=['GET', 'POST'])
+@app.route('/contact', method=['GET', 'POST'])
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True) #Remove debugging before launch
