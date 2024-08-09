@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>My Portfolio</title>
 </head>
 <body>
-    <h1>My Portfolio</h1>
+    <h1 class="title">Colm Kelleher</h1>
+    <h3 class="title">Web Developer</h3>
     <nav>
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('projects') }}">Projects</a>
-        <a href="{{ url_for('skills') }}">Skils</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
         <a href="{{ url_for('about') }}">About</a>
         <a href="{{ url_for('contact') }}">Contact</a>
     </nav>

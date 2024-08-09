@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>My Portfolio</title>
 </head>
 
 <body>
-    <h1>My Portfolio</h1>
+    <h1 class="title">Colm Kelleher</h1>
+    <h3 class="title">Web Developer</h3>
     <nav>
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('projects') }}">Projects</a>
-        <a href="{{ url_for('skills') }}">Skils</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
         <a href="{{ url_for('about') }}">About</a>
         <a href="{{ url_for('contact') }}">Contact</a>
     </nav>
-    
+    <p>Welcome to my portfolo. My name is Colm Kelleher. I am a fullstack software development student who aspires to help in the world of technology by developing pixel perfect applications that can be used on a daily basis. My aim as a Developer is to automate every day repetitive tasks for various workplaces including sales teams and digitalising business regardless of the size or budget.</p>
+
 </body>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
