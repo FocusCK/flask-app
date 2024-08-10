@@ -2,22 +2,61 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #003C43;
+    background-color: #0095ff25;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5900ff7c;
+
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 15px;
     text-decoration: none;
-    color: #77B0AA;
+    color: #00d9ff76;
+    font-size: large;
 }
 
-.title {
-    margin-left: 20px;
-    color: #E3FEF7;
+.logo {
+    width: 15vw;
+    border-radius: 2vw;
 }
 
-p {
-    margin-left: 5em;
-    margin-right: 40em;
+#bio {
+    margin-left: 3em;
+    margin-right: 2em;
+    padding-top: 1em;
     color: #135D66;
+    font-size: 4em;
+    display: flex;
+    justify-content: space-around;
+}
+#home-picture {
+    border-radius: 20px;
+    height: 10em;
+}
+#intro {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 10em; */
+}
+
+#languages {
+    
+}
+
+#experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    background-color:#00d9ff72;
+    width: 90vw;
+    margin: auto;
+    border-radius: 2em;
+    margin: 2em;
 }

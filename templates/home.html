@@ -9,17 +9,50 @@
 </head>
 
 <body>
-    <h1 class="title">Colm Kelleher</h1>
-    <h3 class="title">Web Developer</h3>
-    <nav>
-        <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('projects') }}">Projects</a>
-        <a href="{{ url_for('skills') }}">Skills</a>
-        <a href="{{ url_for('about') }}">About</a>
-        <a href="{{ url_for('contact') }}">Contact</a>
-    </nav>
-    <p>Welcome to my portfolo. My name is Colm Kelleher. I am a fullstack software development student who aspires to help in the world of technology by developing pixel perfect applications that can be used on a daily basis. My aim as a Developer is to automate every day repetitive tasks for various workplaces including sales teams and digitalising business regardless of the size or budget.</p>
-
+    <header>
+        <a href="{{ url_for('home') }}"><img class="logo"
+                src="{{ url_for('static', filename='images/Colm-Kelleher-Logo.png') }}"
+                alt="Logo for Colm Kelleher"></a>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    <section id="bio">
+    <div id="intro">
+        <p>Hello,</p>
+        <p>I am a software developer.</p>
+    </div>
+    <div>
+        <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}" alt="Profile picture">
+    </div>
+    </section>
+    <section id="experience">
+        <div>
+            <p>1 Year Experience</p>
+        </div>
+        <div>
+            <p>3 Completed Projects</p>
+        </div>
+        <div id="languages">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <!-- <img src="{{ url_for('static', filename='images/css.png') }}" alt="CSS Logo"> 
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dcss%2BLogo&psig=AOvVaw0GvCIjhgH3VqOumkletS41&ust=1723381243433000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDpjMu96ocDFQAAAAAdAAAAABAE
+            <img src="{{ url_for('static', filename='images/html.png') }}" alt="HTML Logo"> 
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dhtml&psig=AOvVaw28tMPdqme3KfctikL1CLyV&ust=1723381432475000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiR_qS-6ocDFQAAAAAdAAAAABAE
+            <img src="{{ url_for('static', filename='images/js.png') }}" alt="JavaScript Logo"> 
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Djavascript%2BLogo&psig=AOvVaw22VwmhspM2gKFSAV4Jrz-A&ust=1723381541043000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjtkta-6ocDFQAAAAAdAAAAABAE -->
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 

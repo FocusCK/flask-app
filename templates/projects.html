@@ -7,8 +7,18 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <h1 class="title">Colm Kelleher</h1>
-    <h3 class="title">Web Developer</h3>
+    <header>
+        <a href="{{ url_for('home') }}"><img class="logo"
+                src="{{ url_for('static', filename='images/Colm-Kelleher-Logo.png') }}"
+                alt="Logo for Colm Kelleher"></a>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
     <nav>
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('projects') }}">Projects</a>
