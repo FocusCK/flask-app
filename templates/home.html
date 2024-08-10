@@ -22,20 +22,21 @@
         </nav>
     </header>
     <section id="bio">
-    <div id="intro">
-        <p>Hello,</p>
-        <p>I am a software developer.</p>
-    </div>
-    <div>
-        <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}" alt="Profile picture">
-    </div>
+        <div id="intro">
+            <p>Hello,</p>
+            <p>I am a software developer.</p>
+        </div>
+        <div>
+            <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}"
+                alt="Profile picture">
+        </div>
     </section>
     <section id="experience">
         <div>
             <p>1 Year Experience</p>
         </div>
         <div>
-            <p>3 Completed Projects</p>
+            <p>1 Completed Project</p>
         </div>
         <div id="languages">
             <p>HTML</p>
@@ -51,7 +52,19 @@
         </div>
     </section>
     <footer>
-        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>&copy; 2024 Colm Kelleher. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
