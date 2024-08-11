@@ -9,15 +9,21 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0502bdc6;
-
+    /* background-color: #0502bdc6; */
 }
 
 nav a {
     margin: 15px;
     text-decoration: none;
-    color: #00d9ff76;
+    color: #1dbad6;
     font-size: large;
+    
+}
+
+nav {
+    background-color: #0502bdc6;
+    padding: 2em;
+    border-radius: 2em;
 }
 
 .logo {
@@ -148,6 +154,7 @@ footer li {
     gap: 10px;
     width: 80%;
     max-width: 1200px;
+    border-radius: 2em;
 }
 
 .skills-main {
@@ -157,11 +164,30 @@ footer li {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    font-size: larger;
 }
 
-.left-row {
-    grid-row: span 1;
+.first-row {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: rgba(44, 183, 252, 0.398);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.second-row {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: rgba(44, 183, 252, 0.398);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.third-row {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     background-color: rgba(44, 183, 252, 0.398);
     color: white;
     padding: 20px;
@@ -169,7 +195,8 @@ footer li {
 }
 
 .right-column {
-    grid-row: span 3;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
     background-color: #2196F3;
     color: white;
     padding: 20px;
@@ -178,5 +205,27 @@ footer li {
 
 .skills-main li {
     list-style-type: none;
+}
 
+.about {
+    display: flex;
+    flex-direction: row;
+    padding: 5em;
+    margin: 2 5em;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+}
+
+.about p {
+    padding: 1em;
+    font-size: larger;
+}
+
+#about-picture {
+    width: 15vw;
+    border-radius: 2em;
 }

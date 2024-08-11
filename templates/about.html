@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>My Portfolio</title>
 </head>
+
 <body>
     <header>
         <a href="{{ url_for('home') }}"><img class="logo"
@@ -19,7 +21,29 @@
             <a href="{{ url_for('contact') }}">Contact</a>
         </nav>
     </header>
-    
+    <main>
+        <div class="about">
+            <div class="paragraphs">
+                <p>Hello,<br>My name is Colm, I am a software developer student who started off my career as a
+                    salesperson. As much as I love the world of sales I've been attracted to technology and its
+                    possibilities for a long time now.<br>I decided to take the plunge and delve into the world of web
+                    dev and software dev about two years ago. I started a course with UCD in January to improve my
+                    skills further. The course has been successful so far by improving my confidence in creating full
+                    web applications from scratch and enjoying every minute of it.</p>
+                <p>Throughout my career so far, customer focus has been my number one priority. The satisfaction I get
+                    from recieving good feedback is what keeps me ticking. Luckily I can transfer this work style over
+                    to technology by making that commitment to maintaining happy customers. My customer focus is
+                    unmatched and I always stride to "one-up" myself, resulting in positive feedback.</p>
+            </div>
+            <div>
+                <img id="about-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}"
+                    alt="Profile picture">
+            </div>
+        </div>
+        <!-- <div class="about">
+            <p>Throughout my career so far, customer focus has been my number one priority. The satisfaction I get from recieving good feedback is what keeps me ticking. Luckily I can transfer this work style over to technology by making that commitment to maintaining happy customers. My customer focus is unmatched and I always stride to "one-up" myself, resulting in positive feedback.</p>
+        </div> -->
+    </main>
     <footer>
         <div class="footer-section links">
             <h3>Quick Links</h3>
@@ -37,4 +61,5 @@
     </footer>
 </body>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </html>
