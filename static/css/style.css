@@ -56,7 +56,7 @@ nav a {
     justify-content: space-around;
     align-items: center;
     font-size: larger;
-    background-color: #00d9ff72;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 90vw;
     margin: auto;
     border-radius: 2em;
@@ -111,10 +111,9 @@ footer li {
 }
 
 .carousel-caption {
-    position: absolute;
+    margin: 1em 3em; 
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
@@ -140,4 +139,44 @@ footer li {
 
 .carousel-control.next {
     right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.skills-main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.left-row {
+    grid-row: span 1;
+    background-color: rgba(44, 183, 252, 0.398);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-column {
+    grid-row: span 3;
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-main li {
+    list-style-type: none;
+
 }
