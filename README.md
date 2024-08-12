@@ -41,8 +41,15 @@ my_flask_app/
 
 ```bash
 pip install flask
-
+```
 
 
 ## **Here's a link for deploying on render.com**
 https://flask-app-l4yb.onrender.com
+
+
+## **Here's a link for my repository**
+https://github.com/FocusCK/flask-app.git
+
+## **Here's a link for my GitHub Account**
+https://github.com/FocusCK
