@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>My Portfolio</title>
 </head>
+
 <body>
     <header>
         <a href="{{ url_for('home') }}"><img class="logo"
@@ -23,19 +25,23 @@
     <main class="contact-main">
         <h1>Contact Me</h1>
         <form action="{{ url_for('contact') }}" method="POST">
+            <!-- Name section -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
+            <!-- Email section -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
+            <!-- Field for entering a message -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
+            <!-- Submit button -->
             <button type="submit">Send Message</button>
         </form>
     </main>
-    
+
     <footer>
         <div class="footer-section links">
             <h3>Quick Links</h3>
@@ -53,4 +59,5 @@
     </footer>
 </body>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </html>
