@@ -23,15 +23,18 @@
     </header>
     <section id="bio">
         <div id="intro">
+            <!-- Simple introduction. May introduce JavaScript here in the future to make it more appealing. -->
             <p>Hello,</p>
             <p>I am a Software Developer.</p>
         </div>
         <div>
             <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}"
                 alt="Profile picture">
+        <!-- May add something that makes the picture move in some way to catch the viewers eye. -->
         </div>
     </section>
     <section id="experience">
+        <!-- xperience section can be updated as I progress, complete new projects and learn new languages -->
         <div>
             <p>1 Year Experience</p>
         </div>
@@ -43,16 +46,11 @@
             <p>CSS</p>
             <p>JavaScript</p>
             <p>Python</p>
-            <!-- <img src="{{ url_for('static', filename='images/css.png') }}" alt="CSS Logo"> 
-            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dcss%2BLogo&psig=AOvVaw0GvCIjhgH3VqOumkletS41&ust=1723381243433000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDpjMu96ocDFQAAAAAdAAAAABAE
-            <img src="{{ url_for('static', filename='images/html.png') }}" alt="HTML Logo"> 
-            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dhtml&psig=AOvVaw28tMPdqme3KfctikL1CLyV&ust=1723381432475000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiR_qS-6ocDFQAAAAAdAAAAABAE
-            <img src="{{ url_for('static', filename='images/js.png') }}" alt="JavaScript Logo"> 
-            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Djavascript%2BLogo&psig=AOvVaw22VwmhspM2gKFSAV4Jrz-A&ust=1723381541043000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjtkta-6ocDFQAAAAAdAAAAABAE -->
         </div>
     </section>
     <footer>
         <div class="footer-section links">
+            <!-- Here are the nav items for easy access to the visitor of the web page -->
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
