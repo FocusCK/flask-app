@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0095ff25;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 header {
@@ -78,6 +83,7 @@ footer {
     position: -webkit-sticky;
     bottom: 0;
     width: 100vw;
+    margin-top: auto;
 }
 
 footer a {
@@ -274,4 +280,37 @@ footer li {
 
 .contact-main button:hover {
     background-color: #0502bd94;
+}
+
+@media (max-width: 900px) {
+    #bio {
+        margin-left: .5em;
+        margin-right: .5em;
+        padding-top: 1em;
+        color: #135D66;
+        font-size: 2em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .grid-container {
+        gap: 5px;
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 0.5em;
+    }
+
+    .skills-main {
+        font-size: small;
+    }
+
+    .paragraphs {
+        font-size: x-small;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: small;
+        
+    }
 }
