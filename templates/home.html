@@ -21,33 +21,35 @@
             <a href="{{ url_for('contact') }}">Contact</a>
         </nav>
     </header>
-    <section id="bio">
-        <div id="intro">
-            <!-- Simple introduction. May introduce JavaScript here in the future to make it more appealing. -->
-            <p>Hello,</p>
-            <p>I am a Software Developer.</p>
-        </div>
-        <div>
-            <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}"
-                alt="Profile picture">
-            <!-- May add something that makes the picture move in some way to catch the viewers eye. -->
-        </div>
-    </section>
-    <section id="experience">
-        <!-- xperience section can be updated as I progress, complete new projects and learn new languages -->
-        <div>
-            <p>1 Year Experience</p>
-        </div>
-        <div>
-            <p>1 Completed Project</p>
-        </div>
-        <div id="languages">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Python</p>
-        </div>
-    </section>
+    <main>
+        <section id="bio">
+            <div id="intro">
+                <!-- Simple introduction. May introduce JavaScript here in the future to make it more appealing. -->
+                <p>Hello,</p>
+                <p>I am a Software Developer.</p>
+            </div>
+            <div>
+                <img id="home-picture" src="{{ url_for('static', filename='images/Colm-Kelleher.jpeg') }}"
+                    alt="Profile picture">
+                <!-- May add something that makes the picture move in some way to catch the viewers eye. -->
+            </div>
+        </section>
+        <section id="experience">
+            <!-- xperience section can be updated as I progress, complete new projects and learn new languages -->
+            <div>
+                <p>1 Year Experience</p>
+            </div>
+            <div>
+                <p>1 Completed Project</p>
+            </div>
+            <div id="languages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-section links">
             <!-- Here are the nav items for easy access to the visitor of the web page -->
